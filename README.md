@@ -38,7 +38,7 @@
 
 1. Клонируйте репозиторий:
    ```sh
-   git clone https://github.com/your-username/spa-artworks-app.git
+   git clone https://github.com/karpenko-oleg/SPA-App.git
    cd spa-artworks-app
 
 
