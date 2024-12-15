@@ -1,0 +1,148 @@
+
+.itemContainer{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+	li{
+		position: relative;
+		box-shadow: 0px 0px 10px #dcd7d7;
+		border-radius: 12px;
+		overflow: hidden;
+		.itemImagse{
+			display: block;
+			width: 300px;
+			height: 300px;
+			object-fit: cover;
+		}
+	}
+}
+.skeleton{
+	background-color: #dad8d8;
+	width: 300px;
+	height: 300px;
+	font-size: 22px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.itemText{
+	padding: 20px 10px;
+	h3{
+		font-size: 22px;
+		font-weight: 700;
+		word-wrap: break-word;
+		hyphens: auto;
+	}
+	p{
+		padding-top: 10px;
+		font-size: 16px;
+		line-height: 17px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -moz-box;
+		-moz-box-orient: vertical;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		line-clamp: 3;
+		box-orient: vertical;
+	}
+}
+.favorite{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	cursor: pointer;
+}
+.closeIcon{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	background-color: #fff;
+	border-radius: 50px;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+	cursor: pointer;
+}
+.buttonContainer{
+	width: 200px;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	margin: 20px auto 0;
+}
+.pagination{
+	padding: 10px;
+	background-color: #EF3124;
+	color: #fff;
+	border-radius: 12px;
+}
+.artworkList_filter{
+	text-align: right;
+	background-color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	position: relative;
+	h3{
+		font-size: 22px;
+		padding-bottom: 10px;
+		width: 200px;
+		cursor: pointer;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		strong{
+			font-weight: 500;
+		}
+		i{
+			rotate: -90deg;
+			margin-left: 10px;
+		}
+	}
+	ul{
+		padding: 10px;
+		background-color: #fff;
+		width: 200px;
+		border-radius: 0 0 10px 10px;
+		position: absolute;
+		right: 0;
+		top: 25px;
+		z-index: 102;
+		li {
+			margin-top: 10px;
+			font-size: 18px;
+			cursor: pointer;
+		}
+	}
+}
+.itemContainerNotFound{
+	font-size: 32px;
+}
+
+
+@media (max-width: 982px) {
+  .itemContainer{
+		grid-template-columns: 1fr 1fr;
+		li{
+			.itemImagse{
+				width: 100%;
+			}
+		}
+	}
+}
+@media (max-width: 490px) {
+  .itemContainer{
+		grid-template-columns: 1fr;
+	}
+}

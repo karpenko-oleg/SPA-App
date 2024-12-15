@@ -1,0 +1,32 @@
+.productpage{
+	max-width: 1200px;
+	margin: 30px auto;
+	img{
+		width: 40%;
+	}
+}
+.productpage_container{
+	display: flex;
+	gap: 20px;
+}
+.productpageButton{
+	padding: 10px 15px;
+	border-radius: 12px;
+	background-color: #EF3124;
+	color: #fff;
+	font-size: 18px;
+	margin-top: auto;
+	width: 200px;
+}
+.itemText{
+	display: flex;
+	flex-direction: column;
+	h3{
+		font-size: 30px;
+		font-weight: 700;
+	}
+	p{
+		font-size: 20px;
+		padding-top: 15px;
+	}
+}
